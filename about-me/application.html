@@ -22,6 +22,9 @@
         <input id="student" name="student" type="text" minlength="2" required>
     </p>
     <p>
+        <label for="password">Пароль</label>
+        <input id="password" name="password" type="password" pattern="[а-яёА-ЯЁ0-9]+">
+    <p>
         <label for="email">Учебная почта</label>
         <input id="email" name="email" type="email" placeholder="student@example.com" required>
     </p>
@@ -38,6 +41,8 @@
         <legend>Формат занятий</legend>
         <p><input id="offline" type="radio" name="format" value="offline" required>
         <label for="offline">В колледже</label></p>
+        <p><input id="online" type="radio" name="format" value="online">
+        <label for="online">Дистанционно</label></p>
     </fieldset>
     <p>
         <label for="topic">Направление</label>
@@ -47,10 +52,6 @@
             <option value="git">Git</option>
             <option value="python">Python</option>
         </select>
-    </p>
-    <p>
-        <input id="reminder" name="reminder" type="checkbox" value="yes">
-        <label for="reminder">Добавить учебное напоминание</label>
     </p>
     <p>
         <input id="reminder" name="reminder" type="checkbox" value="yes">
