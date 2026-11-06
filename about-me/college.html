@@ -6,16 +6,28 @@
     <title>Мой колледж - Иванов Александр</title>
 </head>
 <body>
-    <nav>
-    <ul>
-        <li><a href="index.html">Обо мне </a></li>
-        <li><a href="hobby.html">Мои увлечения</a></li>
-        <li><a href="college.html">Мой колледж</a></li>
-        <li><a href="season.html">Любимое время года</a></li>
-        <li><a href="application.html">Заявка на учебный кружок</a></li>
-      </ul>
-    </nav>
-    <h1>Мой колледж</h1>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Обо мне </a></li>
+                <li><a href="hobby.html">Мои увлечения</a></li>
+                <li><a href="college.html">Мой колледж</a></li>
+                <li><a href="season.html">Любимое время года</a></li>
+                <li><a href="application.html">Заявка на учебный кружок</a></li>
+            </ul>
+        </nav>
+        <hr>
+        <ul>
+          <li><a href="#special">Моя специальность</a></li>
+          <li><a href="#teaching">Чему я учусь</a></li>
+          <li><a href="#top">Мой колледж</a></li>
+        </ul>
+    </header>
+    
+    <main>
+        <section aria-labelledby="top">
+        <h1 id="top">Мой колледж</h1>
+        </section>
     <p>Чебоксарский экономико-технологический колледж: то государственное автономное профессиональное образовательное учреждение Чувашской Республики, которое подчиняется Министерству образования Чувашии. Здесь готовят специалистов среднего звена и квалифицированных рабочих по самым разным направлениям — от экономики и IT до безопасности, сервиса и лёгкой промышленности.</p>
 
     <figure>
@@ -23,10 +35,14 @@
         <figcaption>Рис. 1. ЧЭТК Фото</figcaption>
     </figure>
 
-    <h2>Моя специальность</h2>
+    <section aria-labelledby="special">
+    <h2 id="special">Моя специальность</h2>
+    </section>
     <p>Информационные системы и программирование (09.02.07): обучают программированию, математике. </p>
 
-    <h2>Чему я учусь</h2>
+    <section aria-labelledby="teaching">
+    <h2 id="teaching">Чему я учусь</h2>
+    </section>
     <ul>
         <li>Веб-разработка</li>
         <li>Базы данных</li>
@@ -36,5 +52,7 @@
 
     <p><a href="https://chetk.info/?ysclid=mw3fwih76k865318680" target="_blank" rel="noopener noreferrer">Официальный сайт колледжа</a>
     </p>
+    <p><a href="#top">Наверх</a></p>
+    </main>
 </body>
 </html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <p>Учебный сайт студента ИС-1-25</p>
+      <nav aria-label="Главное меню">
+       <ul>
+        <li><a href="index.html">Обо мне </a></li>
+        <li><a href="hobby.html">Мои увлечения</a></li>
+        <li><a href="college.html">Мой колледж</a></li>
+        <li><a href="season.html">Любимое время года</a></li>
+        <li><a href="application.html">Заявка на учебный кружок</a></li>
+        <li><a href="club.html">Учебный клуб</a></li>
+       </ul>
+       </nav>
+    </header>
+    <main>
+        <h1>Учебный клуб</h1>
+        <h2>О клубе</h2>
+        <p>Приглашаем вас в клуб! Клуб <strong>программирования!</strong>
+        <h2>Новость о клубе!</h2>
+        <p>Наш клуб объявил набор! <strong>Мы ждем новых студентов</strong> в нашем клубе!<br>В клубе жизнь станет веселее и активнее!
+        <table>
+            <caption>Статистика встреч за неделю</caption>
+        <thead>
+            <tr>
+                <th scope="col">День</th>
+                <th scope="col">Тема</th>
+                <th scope="col">Кабинет</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="3" scope="rowgroup"> Понедельник</th>
+                <td>Графический дизайн</td>
+                <td>173</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Вторник</th>
+                <td>Python</td>
+                <td>124</td>
+        </tbody>
+        <tbody>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Среда</th>
+                <td>Мероприятие</td>
+                <td>Актовый зал</td>
+        </tbody>
+        </table>
+        <hr>
+        <h1>Заявка на вступление в клуб</h1>
+        <form action="club.html" method="get">
+            <p>
+                <label for="student">Ваше имя</label>
+                <input id="student" name="student" type="text" minlength="2" required>
+            </p>
+            <p>
+                <label for="topic">Направление</label>
+                <select id="topic" name="topic" required>
+                    <option value="">Выберите направление</option>
+                    <option value="html">HTML</option>
+                    <option value="git">Git</option>
+                    <option value="python">Python</option>
+                </select>
+            </p>
+            <p>
+                <input id="reminder" name="reminder" type="checkbox" value="yes">
+                <label for="reminder">Отправлять новости о клубе</label>
+            </p>
+            <button type="submit">Отправить заявку</button>\
+            <button type="reset">Сбросить поля</button>
+            <footer>
+                Автор: Иванов Александр. Учебная практика УП. 09
+            </footer>
+        </form>
+            
+
+
+    </main>
+    
+</body>
+</html>

@@ -6,41 +6,51 @@
     <title>Обо мне - Имя Фамилия</title>
   </head>
   <body>
-    <nav>
-      <ul>
+    <header>
+      <p>Учебный сайт студента ИС-1-25</p>
+      <nav aria-label="Главное меню">
+       <ul>
         <li><a href="index.html">Обо мне </a></li>
         <li><a href="hobby.html">Мои увлечения</a></li>
         <li><a href="college.html">Мой колледж</a></li>
         <li><a href="season.html">Любимое время года</a></li>
         <li><a href="application.html">Заявка на учебный кружок</a></li>
-      </ul>
-    </nav>
-    <h1 id="top">Иванов Александр</h1>
-    <img src="me.jpg" alt="Фотография: Иванов Александр" width="300">
-    <p>
-      Студент группы ИС-1-25, Чебоксарский экономико-технологический колледж.
-    </p>
+        <li><a href="club.html">Учебный клуб</a></li>
+       </ul>
+       </nav>
+    </header>
+    <main>
+      <h1 id="top">Иванов Александр</h1>
+      <section aria-labelledby="about">
+      <h2 id="about">Кто я</h2>
+        <p>
+          Я <strong>Иванов Александр</strong>, учусь в группе
+          <strong>ИС-1-25 в Чебоксарском экономико-технологический колледже.</strong>
+          Я увлекаюсь <em>программированием</em>.
+        </p>
+        <img src="me.jpg" alt="Фотография: Иванов Александр" width="300">
+      </section>
+      <section aria-labelledby="study">
+        <h2 id="study">Моя учеба</h2>
+        <p>Я изучаю языки программирования: <strong>python, html.</strong>
+        </p>
+      </section>
+      <section aria-labelledby="plans">
+        <h2 id="plans">Мои планы</h2>
+        <p>
+          В будущем я хочу стать <strong>программистом,</strong> научиться делать сайты и тому
+          подобное.
+        </p>
+      </section>
+    <footer>
+    <p>Автор: Иванов Алекснадр. Учебная практика УП.09.</p>
+    </footer> 
     <hr>
     <ul>
       <li><a href="#about">Обо мне</a></li>
       <li><a href="#study">Моя учеба</a></li>
       <li><a href="#plans">Мои планы</a></li>
     </ul>
-    <h2 id="about">Обо мне</h2>
-    <p>
-      Я <strong>Иванов Александр</strong>, учусь в группе
-      <strong
-        >ИС-1-25 в Чебоксарском экономико-технологический колледже.</strong
-      >
-      Я увлекаюсь <em>программированием</em>.
-    </p>
-    <h2 id="study">Моя учеба</h2>
-    <p>Я изучаю языки программирования: <strong>python, html.</strong></p>
-    <h2 id="plans">Мои планы</h2>
-    <p>
-      В будущем я хочу стать <strong>программистом,</strong> научиться делать сайты и тому
-      подобное.
-    </p>
     <p>
       Город: <strong> Чебоксары</strong><br>
       Группа: <strong>ИС-1-25</strong>
@@ -58,6 +68,8 @@
       <li><a href="mailto:fafikbs123@gmail.com">Написать мне письмо</a></li>
     </ul>
     <p><a href="#top">Наверх</a></p>
+    </main>
+
     
 </body>
 </html>
