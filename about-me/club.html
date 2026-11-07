@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="style.css"> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -8,7 +9,7 @@
 <body>
     <header>
         <p>Учебный сайт студента ИС-1-25</p>
-      <nav aria-label="Главное меню">
+      <nav class="main-nav" aria-label="Главное меню">
        <ul>
         <li><a href="index.html">Обо мне </a></li>
         <li><a href="hobby.html">Мои увлечения</a></li>
@@ -23,8 +24,8 @@
         <h1>Учебный клуб</h1>
         <h2>О клубе</h2>
         <p>Приглашаем вас в клуб! Клуб <strong>программирования!</strong>
-        <h2>Новость о клубе!</h2>
-        <p>Наш клуб объявил набор! <strong>Мы ждем новых студентов</strong> в нашем клубе!<br>В клубе жизнь станет веселее и активнее!
+        <h2 class="news">Новость о клубе!</h2>
+        <p class="obr">Наш клуб объявил набор! <strong>Мы ждем новых студентов</strong> в нашем клубе!<br>В клубе жизнь станет веселее и активнее!
         <table>
             <caption>Статистика встреч за неделю</caption>
         <thead>
@@ -36,22 +37,24 @@
         </thead>
         <tbody>
             <tr>
-                <th rowspan="3" scope="rowgroup"> Понедельник</th>
+                <th rowspan="1" scope="rowgroup"> Понедельник</th>
                 <td>Графический дизайн</td>
                 <td>173</td>
             </tr>
         </tbody>
         <tbody>
             <tr>
-                <th rowspan="3" scope="rowgroup">Вторник</th>
+                <th rowspan="1" scope="rowgroup">Вторник</th>
                 <td>Python</td>
                 <td>124</td>
+            </tr>
         </tbody>
         <tbody>
             <tr>
-                <th rowspan="3" scope="rowgroup">Среда</th>
+                <th rowspan="1" scope="rowgroup">Среда</th>
                 <td>Мероприятие</td>
                 <td>Актовый зал</td>
+            </tr>
         </tbody>
         </table>
         <hr>
@@ -76,8 +79,8 @@
             </p>
             <button type="submit">Отправить заявку</button>
             <button type="reset">Сбросить поля</button>
-            <footer>
-                Автор: Иванов Александр. Учебная практика УП. 09
+            <footer class="page-footer">
+               <p> Автор: Иванов Александр. Учебная практика УП. 09
             </footer>
         </form>
             
