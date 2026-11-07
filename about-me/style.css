@@ -114,6 +114,78 @@ h1, h2, h3 {
     line-height: 1.2;
 }
 
+body {
+    margin: 0;
+}
+
+header, main, footer {
+    width: min(100% - 2rem, 70rem);
+    margin-inline: auto;
+}
+
+main {
+    padding-block: 2rem;
+}
+
+section {
+    margin-block: 2rem;
+}
+
+h1, h2, h3, p, ul, ol figure {
+    margin-top: 0;
+}
 
 
+.main-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 0;
+    list-style: none;
+}
 
+.main-nav a {
+    display: inline-block;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #8a2c2c;
+    border-radius: 0.35rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th,td {
+    padding: 0.65rem;
+    border: 1px solid #aebdca;
+    text-align: left;
+}
+
+input, select, textarea, button {
+    font: inherit;
+}
+
+input, select, textarea {
+    width: 100%;
+    max-width: 32rem;
+    padding: 0.55rem;
+    border: 1px solid #7d8d9c;
+}
+
+button {
+    padding: 0.6rem 1rem;
+    cursor: pointer
+}
+
+.card-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.card {
+    display: inline-block;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #333;
+    border-radius: 8px;
+    flex: 1 1 15rem;
+}
