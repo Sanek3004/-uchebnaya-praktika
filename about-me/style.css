@@ -118,6 +118,18 @@ h2 {
 body {
     margin: 0;
 }
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-block: 1rem;
+    padding: 0.75rem;
+    background-color: white;
+    
+}
 
 header, main, footer {
     width: min(100% - 2rem, 70rem);
@@ -147,7 +159,7 @@ h1, h2, h3, p, ul, ol figure {
 }
 
 .main-nav a {
-    display: inline-block;
+    display: flex;
     padding: 0.5rem 0.75rem;
     border: 1px solid #8a2c2c;
     border-radius: 0.35rem;
@@ -378,7 +390,7 @@ button {
 
 .page-tools {
     position: sticky;
-    top: 0;
+    top: 260px;
     z-index: 10;
     display: flex;
     flex-wrap: wrap;
