@@ -355,5 +355,70 @@ button {
     padding-left: 1.25rem;
 }
 
+.position-box {
+    position: relative;
+    max-width: 32rem;
+    padding: 2.5rem 1rem 1rem;
+    border: 1px solid #9fb3c8;
+    border-radius: 0.5rem;
+    background-color: white;
+}
+
+.badge {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    padding: 0.25rem 0.5rem;
+    border-radius:  0.23rem;
+    color: white;
+    background-color: #8a2c2c;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.page-tools {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-block: 1rem;
+    padding: 0.75rem;
+    border: 1px solid #9fb3c8;
+    background-color: white;
+}
+
+.page-tools a {
+    display: inline-block;
+    padding: 0.35rem 0.6rem;
+}
+
+.product-card {
+position: relative;
+padding-top: 3rem;
+}
+
+.card-bage {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    color: white;
+    background-color: #8a2c2c;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.back-to-top {
+    margin-top: 2rem;
+    text-align: right;
+}
+
+.back-to-top a {
+    display: inline-block;
+    padding: 0.5rem 0.75rem;
+}
 
 
