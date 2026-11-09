@@ -215,7 +215,7 @@ button {
 
 .flex-item {
     flex: 1 1 10rem;
-    padding: 0.75;
+    padding: 0.75rem;
     border: 1px solid #6f8498;
     background-color: white;
 }
@@ -227,7 +227,7 @@ button {
     flex-wrap: wrap;
     gap: 1rem;
     padding: 1rem;
-    border: 1rem solid #9fb3c8;
+    border: 1px solid #9fb3c8;
     background-color: #f7fafc;
 }
 
