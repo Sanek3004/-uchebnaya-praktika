@@ -141,6 +141,7 @@ h1, h2, h3, p, ul, ol figure {
     flex-wrap: wrap;
     gap: 0.5rem;
     padding: 0;
+    margin: 0;
     list-style: none;
 }
 
@@ -149,6 +150,16 @@ h1, h2, h3, p, ul, ol figure {
     padding: 0.5rem 0.75rem;
     border: 1px solid #8a2c2c;
     border-radius: 0.35rem;
+    text-decoration: none;
+}
+
+.main-nav a:hover {
+    background-color: #e1edf5;
+}
+
+.main-nav a:focus-visible {
+    outline: 3px solid #d08a00;
+    outline-offset: 2px;
 }
 
 table {
@@ -183,8 +194,96 @@ button {
     gap: 1rem;
 }
 .card {
+    background-color: white;
     padding: 0.5rem 0.75rem;
-    border: 1px solid ;
+    border: 1px solid #aebdca;
     border-radius: 10px;
     flex: 1 1 15rem;
 }
+
+.flex-demo {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    min-height: 10rem;
+    align-items: stretch;
+    gap: 0.75;
+    padding: 1rem;
+    border: 1px solid #9fb3c8;
+}
+
+.flex-item {
+    flex: 1 1 10rem;
+    padding: 0.75;
+    border: 1px solid #6f8498;
+    background-color: white;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+    border: 1rem solid #9fb3c8;
+    background-color: #f7fafc;
+}
+
+.actions-status {
+    margin: 0;
+}
+
+.actions-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.button-link,
+.actions button {
+    display: inline-block;
+    padding: 0.6rem 1rem;
+    border: 1px solid #6f8498;
+    border-radius: 0.35rem;
+    background-color: #eef4f8;
+    color: #17365d;
+    font: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.profile-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+    border: 1px solid #9fb3c8;
+    border-radius: 0.5rem;
+}
+
+.profile-avatar {
+    width: 8rem;
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+}
+
+.profile-text {
+    flex: 1 1 16rem;
+}
+
+.profile-text h3 {
+    margin-top: 0;
+}
+
+.profile-link {
+    display: inline-block;
+    padding: 0.6rem 1rem;
+    border: 1px solid #6f8498;
+    border-radius: 0.35rem;
+}
+
+
