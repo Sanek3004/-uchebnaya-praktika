@@ -1,6 +1,22 @@
 /* Палитра фон #f5f7fa, текст #243142,
 заголовки #17365d, ссылки #0b5cab, акцент #8a2c2c */
 
+
+:root {
+    --color-primary: #1f5d85;
+    --color-primary-dark: #174766;
+    --color-text: #17212b;
+    --color-muted: #465766;
+    --color-surface: #ffffff;
+    --color-background: #f4f7f9;
+    --color-border: #c9d3dd;
+    --space-xs: 0.5rem;
+    --space-sm: 0.75rem;
+    --space-md: 1rem;
+    --space-lg: 1.5rem;
+    --radius: 0.5rem;
+}
+
 body {
     color: #243142;
     background-color: #fdfcfc;
@@ -536,6 +552,11 @@ img {max-width: 100%; height: auto;}
 .form-grid {
     display: grid;
     gap: 0.35rem;
+}
+
+.form-field {
+    display: grid;
+    gap: 0.35rem;
     min-width: 0;
 }
 
@@ -638,5 +659,60 @@ img {max-width: 100%; height: auto;}
     }
 }
 
+.project-hero {
+    display: grid;
+    gap: var(--space-lg);
+    align-items: center;
+    padding-block: 2rem;
+}
+
+.project-hero img {
+    width: 100%;
+    max-width: 32rem;
+    border-radius: var(--radius);
+}
+
+.eyebrow {
+    color: var(--color-primary);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.result-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr));
+    gap: var(--space-md);
+}
+
+.result-grid article {
+    padding: var(--space-md);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    background: var(--color-surface);
+}
+
+@media (min-width: 48rem) {
+    .project-hero {grid-template-columns: 1.2fr 1fr;}
+}
+
+
+.games {
+    max-width: 52rem;
+    padding: 1.25rem;
+    border: 1px solid #9fb3c8;
+    border-radius: 0.75rem;
+    background-color: #fdfcfc;
+    
+}
+
+.games article{
+    margin: 1rem;
+    max-width: 52rem;
+    padding: 1.25rem;
+    border: 1px solid #9fb3c8;
+    border-radius: 0.75rem;
+    background-color: #fdfcfc;
+}
 
 

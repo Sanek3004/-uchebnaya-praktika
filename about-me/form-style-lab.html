@@ -9,7 +9,7 @@
 <body>
     <header>
         <p>Учебный сайт студента ИС-1-25</p>
-        <nav class="main-nav" aria-label="Главное меню">
+        <nav class="main-nav" aria-label="Формы">
          <ul>
           <li><a href="index.html">Обо мне </a></li>
           <li><a href="hobby.html">Мои увлечения</a></li>
@@ -21,8 +21,11 @@
           <li><a href="flex-lab.html">Flexbox</a></li>
           <li><a href="catalog.html">Каталог</a></li>
           <li><a href="position-lab.html">Позиционирование</a></li>
+          <li><a href="grid-lab.html">Gridlab</a></li>
           <li><a href="form-style-lab.html">Формы</a></li>
-          <li><a href="styles-check.html">Пара 19</a></li>
+          <li><a href="responsive-lab.html">Адаптивность</a></li>
+          <li><a href="schedule.html">Расписание</a></li>
+          <li><a href="project.html">Проект</a></li>
          </ul>
          </nav>
     </header>
@@ -33,8 +36,10 @@
 
         <form class="study-form" action="#" method="post" aria-describedby="form-help">
             <div class="form-grid">
-                <label for="student-name">Имя и фамилия</label>
-                <input id="student-name" name="student-name" type="text" required autocomplete="name">
+                <div class="form-field">
+                    <label for="student-name">Имя и фамилия</label>
+                    <input id="student-name" name="student-name" type="text" required autocomplete="name">
+                </div>
             </div>
 
             <div class="form-field">
@@ -61,19 +66,19 @@
 
             <fieldset class="form-field form-field--wide">
                 <legend>Уровень подготовки</legend>
-                <label class="choise"><input type="radio" name="format" value="class" checked>Новичок</label>
-                <label class="choise"><input type="radio" name="format" value="online">Средний</label>
-                <label class="choise"><input type="radio" name="format" value="online">Про</label>
+                <label class="choise"><input type="radio" name="level" value="class" checked>Новичок</label>
+                <label class="choise"><input type="radio" name="level" value="online">Средний</label>
+                <label class="choise"><input type="radio" name="level" value="online">Про</label>
 
             </fieldset>
 
             <div class="form-field form-field--wide">
                 <label for="comment">Комментарий</label>
-                <textarea id="comment" name="comment" rows="5" maxlength="500"></textarea>
+                <textarea id="comment" name="comment" rows="5" maxlength="500" required></textarea>
             </div>
 
-            <label class="choise argument">
-                <input type="checkbox" name="argument" required>
+            <label class="choise agreement">
+                <input type="checkbox" name="agreement" required>Уведомлять о новостях
             </label>
 
             <div class="form-actions">
