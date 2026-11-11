@@ -84,3 +84,122 @@ console.log(samost.includes('Проверка'));
 
 
 
+// Пара 23 Условия и циклы //
+
+const number = 17;
+if (number % 2 === 0) {
+    console.log(number + '- четное');
+} else {
+    console.log(number + '- нечетное');
+}
+
+if (number > 0) {
+    console.log('Положительное')
+} else if (number < 0) {
+    console.log('Отрицательное');
+} else {
+    console.log('Ноль')
+}
+
+const userNumber = Number(prompt('Введите целое число'));
+
+if (Number.isNaN(userNumber)) {
+    console.log('Это не число');
+} else if (userNumber % 2 === 0) {
+    console.log(userNumber + ' - четное');
+} else {
+    console.log(userNumber + ' - нечетное');
+}
+
+const score = 78;
+let mark;
+
+if (score >= 90) {
+    mark = 5;
+} else if (score >= 75) {
+    mark = 4;
+} else if (score >= 60) {
+    mark = 3;
+} else {
+    mark = 2;
+}
+
+console.log(`Баллов: ${score}, оценка: ${mark}`);
+
+console.log(5 === '5'); 
+console.log(5 == '5'); 
+
+const dayNumber = 3;
+let dayName;
+
+switch (dayNumber) {
+    case 1:
+        dayName = 'Понедельник';
+        break;
+    case 2:
+        dayName = 'Вторник';
+        break;
+    case 3:
+        dayName = 'Среда';
+        break;
+    case 4:
+        dayName = 'Четверг';
+        break;
+    case 5:
+        dayName = 'Пятница';
+        break;
+    case 6:
+        dayName = 'Суббота';
+        break;
+    case 7:
+        dayName = 'Воскресенье';
+        break;
+    default:
+        dayName = 'Такого дня нет';
+}
+console.log(`День ${dayNumber}: ${dayName}`);
+
+const isWeekend = dayNumber === 6 || dayNumber === 7;
+console.log(`Выходной:`, isWeekend);
+
+// самостоятельная 1 //
+
+const month= 3;
+let monhnumber;
+switch (month) {
+    case 1:
+        monhnumber = 'Январь';
+        break;
+    case 2:
+        monhnumber = 'Февраль';
+        break;
+    case 3:
+        monhnumber = 'Март';
+        break;
+    case 4:
+        monhnumber = 'Апрель';
+        break;
+    default:
+        monhnumber = 'Такого месяца нет';
+}
+console.log(`Месяц: ${monhnumber}`);
+
+// //
+
+for (let i = 1; i <= 10; i++) {
+    console.log(`7 * ${i} = ${7 * i}`);
+}
+
+const n = 5;
+let sum = 0;
+let k = 1;
+while (k <= n) {
+    sum = sum + k;
+    k = k + 1;
+}
+console.log(`Сумма чисел от 1 до ${n}: ${sum}`);
+
+// самостоятельная 2 //
+for (let i = 1; i <=10; i++) {
+    console.log(`10 * ${i} = ${10 * i}`);
+}
