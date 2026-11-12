@@ -35,6 +35,7 @@ productCard.style.backgroundColor = 'yellow';
 productCard.style.padding = '20px';
 productCard.style.border = '2px solid blue';
 productCard.style.borderRadius = '10px';
+productCard.style.width = '300px';
 
 const productPrice = document.querySelector('#product-price');
 

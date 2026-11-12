@@ -165,6 +165,8 @@ console.log(`День ${dayNumber}: ${dayName}`);
 
 const isWeekend = dayNumber === 6 || dayNumber === 7;
 console.log(`Выходной:`, isWeekend);
+console.log(`Будни:`, !isWeekend);
+
 
 // самостоятельная 1 //
 
