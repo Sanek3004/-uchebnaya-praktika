@@ -1,0 +1,23 @@
+[
+    {
+      "id": 1,
+      "name": "Иванов Александр",
+      "email": "ivanov@gmail.com",
+      "phone": "+7 (905) 341-93-55",
+      "address": { "city": "Чебоксары" }
+    },
+    {
+      "id": 2,
+      "name": "Андрей Степанов",
+      "email": "andrei@yandex.com",
+      "phone": "+7 (955) 95-95-67",
+      "address": { "city": "Деревня" }
+    },
+    {
+      "id": 3,
+      "name": "Иванов Иван",
+      "email": "arteme@mail.com",
+      "phone": "+7 (111) 111-11-11",
+      "address": { "city": "Москва" }
+    }
+  ]

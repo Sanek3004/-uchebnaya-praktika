@@ -65,11 +65,13 @@ addTaskBtn.addEventListener('click', function () {
 const questions = document.querySelectorAll('.question');
 
 for (const question of questions) {
+
     question.addEventListener('click', function () {
 
         const answer = question.nextElementSibling;
 
         answer.style.backgroundColor = 'lightgreen';
+        
         answer.classList.toggle('open');
     });
 
