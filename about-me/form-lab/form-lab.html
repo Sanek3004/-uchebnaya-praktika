@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>\
+    <script src="form.js" defer></script>
+</head>
+<body>
+    
+    <h1>Регистрация студента</h1>
+
+    <form id="registration-form" novalidate>
+        <label for="student-name">Имя</label>
+        <input type="text" id="student-name">
+
+        <label for="student-group">Введите группу</label>
+        <input type="text" id="student-group">
+
+        <label for="student-email">Email</label>
+        <input type="email" id="student-email">
+
+        <label for="student-password">Пароль</label>
+        <input type="password" id="student-password">
+
+        <button type="submit">Проверить данные</button>
+
+    </form>
+
+    <p id="result"></p>
+    
+    <h2>Настройки пользователя</h2>
+
+    <button id="save-name">Сохранить имя</button>
+    <button id="save-group">Сохранить группу</button>
+    <button id="show-group">Показать группу</button>
+    <button id="show-name">Показать имя</button>
+    <button id="delete-name">Удалить имя</button>
+
+    <p id="saved-result"></p>
+
+    <h2>Тема оформления</h2>
+
+    <button id="theme-btn">Переключить тему</button>
+</body>
+</html>
