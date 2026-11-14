@@ -37,7 +37,11 @@ $('#hello-btn').click(function () {
         $('#hello-result').css('color', 'red');
     } else if (name.length < 2) {
         $('#hello-result').text('Имя должно содержать больше двух символом');
+        $('#hello-result').css('color', 'red'); 
+    } else if (name.length > 20) {
+        $('#hello-result').text('Имя слишком длинное');
         $('#hello-result').css('color', 'red');
+
     } else {
         $('#hello-result').text('Привет, ' + name + '!');
         $('#hello-result').css('color', 'green');
