@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Практика jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="jquery-lab.js" defer></script>
+</head>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        max-width: 650px;
+        margin: 30px auto;
+        padding: 15px;
+    }
+
+    section {
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+
+    button, input {
+        padding: 8px;
+        margin: 5px;
+    }
+
+    #info-box {
+        background: lightblue;
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+    .card {
+        border: 1px solid #aaa;
+        border-radius: 15px;
+        padding: 10px;
+        margin: 10px 0;
+    }
+</style>
+
+
+
+
+
+
+
+
+
+
+<body>
+    <h1 id="title">Изучаем jQuery</h1>
+
+    <section>
+        <h2>Задача 1. Изменение текста</h2>
+        <p id="message">Исходный текст</p>
+        <button id="change-btn">Изменить текст</button>
+    </section>
+
+    <section>
+        <h2>Задача 2. Скрытие блока</h2>
+        <div id="info-box">Этот блок можно скрывать.</div>
+        <button id="hide-btn">Скрыть</button>
+        <button id="show-btn">Показать</button>
+        <button id="toogle-btn">Переключить</button>
+    </section>
+
+    <section>
+        <h2>Задача 3. Приветствие</h2>
+        <input id="name-input" placeholder="Введите имя">
+        <button id="hello-btn">Поздороваться</button>
+        <p id="hello-result"></p>
+    </section>
+
+    <section>
+        <h2>Задача 4. AJAX</h2>
+        <button id="load-btn">Загрузить данные</button>
+        <div id="users"></div>
+    </section>
+
+
+    <section id="info-color">
+        <h2>Самостоятельное задание</h2>
+        <h2>Информация о курсе</h2>
+        <p>Дисциплина</p>
+        <div id="hide-info">
+        <ul>
+            <li><strong>CSS</strong></li>
+            <li><strong>HTML</strong></li>
+            <li><strong>JavaScript</strong></li>
+        </ul>
+        <p>Группа:</p>
+        <p><strong>ИС-1-25</strong></p>
+        <p>ФИО студента;</p>
+        <p><strong>Иванов Александр</strong></p>
+
+        </div>
+
+        <button id="showandhide-info">Показать/Скрыть</button>
+       
+        
+
+    </section>
+
+</body>
+</html>
